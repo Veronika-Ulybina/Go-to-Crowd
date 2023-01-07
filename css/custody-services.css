@@ -1,0 +1,105 @@
+
+.custody-services {
+  padding: 28px 0;
+}
+
+.custody-services__title {
+  max-width: 562px;
+  margin-bottom: 16px;
+}
+
+.custody-services__part {
+  display: block;
+}
+
+.custody-services__block-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+
+.custody-services__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 24px;
+  margin-bottom: 56px;
+}
+
+.custody-services__column-first {
+  flex: 0 0 357px;
+}
+
+.custody-services__heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+
+.custody-services__column-second {
+  flex: 0 0 357px;
+}
+
+.custody-services__column-third {
+  flex: 0 0 351px;
+}
+
+.custody-services__block {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 24px;
+  background-color: #4b5c5a;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.custody-services__block:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 363px;
+  height: 212px;
+  background-image: url("../img/section_custody-services/01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(-212px);
+}
+
+.custody-services__heading_yellow {
+  color: #f6cea8;
+}
+
+.text_white {
+  color: #fff;
+}
+
+@media (max-width: 1186px) {
+
+  .custody-services__block:after {
+    display: none;
+  }
+}
+
+@media (max-width: 684px) {
+
+  .custody-services__heading {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 529px) {
+
+  .custody-services__column {
+    flex: 0 0 100%;
+  }
+
+  .custody-services__block {
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+}

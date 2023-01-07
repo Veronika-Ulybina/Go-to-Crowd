@@ -1,0 +1,70 @@
+
+.analysis {
+  padding-top: 28px;
+  padding-bottom: 40px;
+}
+
+.analysis__title {
+  margin-bottom: 16px;
+}
+
+.analysis__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.analysis__text {
+  line-height: 28px;
+  color: #686868;
+  margin-bottom: 32px;
+}
+
+.analysis__block-text {
+  display: grid;
+  row-gap: 18px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.analysis__block-image {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 1186px) {
+
+  .analysis__block-image {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+  }
+
+  .analysis__image {
+    flex: 0 0 32px;
+  }
+
+  .analysis__img-coinbase {
+    width: 112.26px;
+  }
+
+  .analysis__img-gemini {
+    width: 149.74px;
+  }
+
+  .analysis__img-hermesus {
+    width: 204.08px;
+  }
+
+  .analysis__img-kraken {
+    width: 115.93px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .analysis {
+    padding-bottom: 28px;
+  }
+}

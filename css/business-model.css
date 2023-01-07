@@ -1,0 +1,126 @@
+
+.business-model {
+  padding: 28px 0;
+}
+
+.business-model__title {
+  margin-bottom: 32px;
+}
+
+.business-model__part {
+  display: block;
+}
+
+.business-model__row {
+  display: grid;
+  grid-template-columns: minmax(auto, 238px) minmax(auto, 500px);
+  grid-template-rows: auto;
+  margin-bottom: 32px;
+}
+
+.business-model__column-first {
+  display: flex;
+  align-items: center;
+  background-color: #4b5c5a;
+  border-radius: 24px 0 0 24px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.business-model__heading {
+  position: relative;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffcea2;
+}
+
+.business-model__heading:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 16px;
+  height: 15.56px;
+  background-image: url("../img/section_business-model/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(-50%, 43.78px);
+}
+
+.business-model__column-second {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  background-color: #ffcea2;
+  border-radius: 0 24px 24px 0;
+  padding: 24px 32px;
+}
+
+.business-model__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 8px;
+}
+
+.business-model__text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.business-model__img {
+  display: block;
+  object-fit: cover;
+}
+
+.business-model__img:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+@media (max-width: 684px) {
+
+  .business-model__heading {
+    max-width: 180px;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0 auto;
+  }
+
+  .business-model__subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 529px) {
+
+  .business-model__row {
+    grid-template-columns: 1fr;
+    grid-template-rows: 136px auto;
+    margin-bottom: 32px;
+  }
+
+  .business-model__column-first {
+    align-items: unset;
+    border-radius: 24px 24px 0 0;
+    padding-top: 16px;
+  }
+
+  .business-model__heading:after {
+    transform: translate(-50%, -20px) rotate(90deg);
+  }
+
+  .business-model__column-second {
+    border-radius: 0 0 24px 24px;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .business-model__row {
+    grid-template-rows: 136px auto;
+  }
+}
+
+

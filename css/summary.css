@@ -1,0 +1,94 @@
+
+.summary {
+  padding: 0 0 28px;
+}
+
+.summary__title {
+  margin-bottom: 16px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.summary__definition {
+  margin-bottom: 24px;
+}
+
+.text {
+  line-height: 28px;
+}
+
+.summary__quote {
+  margin-bottom: 24px;
+}
+
+.quote {
+  font-style: italic;
+  line-height: 28px;
+}
+
+.quote__slogan {
+  position: relative;
+  background-color: #f8f7f5;
+  border-radius: 16px;
+  padding: 24px 60px;
+  margin-bottom: 24px;
+}
+
+.quote__slogan:before,
+.quote__slogan:after {
+  content: "";
+  position: absolute;
+  width: 17.83px;
+  height: 13.68px;
+  background-image: url("../img/section_summary/quotes.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quote__slogan:before {
+  top: 28.82px;
+  left: 27px;
+}
+
+.quote__slogan:after {
+  top: 29.5px;
+  right: 27px;
+  transform: rotate(180deg);
+}
+
+.quote__author {
+  display: block;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  padding-top: 8px;
+}
+
+.summary__desc {
+  margin-bottom: 16px;
+}
+
+.summary-list {
+  line-height: 28px;
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+@media (max-width: 684px) {
+
+  .title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+  @media (max-width: 480px) {
+
+  .quote__slogan {
+    padding: 24px 56px;
+  }
+}

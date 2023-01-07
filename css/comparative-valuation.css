@@ -1,0 +1,81 @@
+
+.comparative-valuation {
+  padding: 40px 0 136px;
+}
+
+.comparative-valuation__title {
+  margin-bottom: 8px;
+}
+
+.comparative-valuation__desc {
+  font-size: 14px;
+  line-height: 24px;
+  color: #686868;
+  margin-bottom: 32px;
+}
+
+.comparative-valuation__body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px 24px;
+}
+
+.comparative-valuation__img {
+  display: block;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+.comparative-valuation-list {
+  font-size: 16px;
+  line-height: 28px;
+  list-style-type: disc;
+  padding-left: 24px;
+  color: #686868;
+}
+
+.comparative-valuation__block_background {
+  position: relative;
+}
+
+.comparative-valuation__block_background:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 345px;
+  background-image: url("../img/section_comparative-valuation/man.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 1031px) {
+
+  .comparative-valuation {
+    padding: 40px 0 119px;
+  }
+
+  .comparative-valuation__block_background:before {
+    height: 313px;
+  }
+}
+
+@media (max-width: 684px) {
+
+  .comparative-valuation {
+    padding: 28px 0 364px;
+  }
+
+  .comparative-valuation__body {
+    grid-template-columns: 1fr;
+  }
+
+  .comparative-valuation__block_background:before {
+    top: 100%;
+    left: 0;
+    width: 288px;
+    height: 304px;
+    transform: translateY(32px);
+  }
+}

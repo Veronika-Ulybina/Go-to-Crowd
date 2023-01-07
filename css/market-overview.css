@@ -1,0 +1,93 @@
+
+.market-overview {
+  padding: 28px 0;
+}
+
+.market-overview__title {
+  margin-bottom: 16px;
+}
+
+.market-overview__block-text {
+  display: grid;
+  row-gap: 17px;
+  line-height: 28px;
+  margin-bottom: 56px;
+}
+
+.market-overview__heading {
+  margin-bottom: 32px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.market-overview__headline {
+  margin-bottom: 8px;
+}
+
+.headline {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.block_bottom {
+  margin-bottom: 56px;
+}
+
+.block {
+  display: grid;
+  row-gap: 16px;
+}
+
+.caption {
+  line-height: 28px;
+  color: #686868;
+}
+
+.heading_bottom {
+  margin-bottom: 19px;
+}
+
+.market-overview__block-text-dynamics {
+  display: grid;
+  row-gap: 16px;
+  line-height: 28px;
+}
+
+.headline_bottom {
+  margin-bottom: 16px;
+}
+
+.market-overview__block-text-dollar {
+  display: grid;
+  row-gap: 16px;
+  line-height: 28px;
+  margin-bottom: 32px;
+}
+
+.market-overview__part {
+  display: block;
+}
+
+.block_gap {
+  row-gap: 23px;
+}
+
+@media (max-width: 684px) {
+
+  .heading {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .headline {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+

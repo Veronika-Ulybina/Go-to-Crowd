@@ -1,0 +1,81 @@
+
+.trading {
+  padding: 28px 0;
+}
+
+.trading__title {
+  margin-bottom: 16px;
+}
+
+.trading__block {
+  display: flex;
+  column-gap: 24px;
+}
+
+.trading__block_first {
+  margin-bottom: 32px;
+}
+
+.trading__box-first {
+  flex-basis: 357px;
+}
+
+.trading__subtitle {
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.trading-list {
+  line-height: 28px;
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+.trading__block_second {
+  background-color: #4b5c5a;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.trading__box-second {
+  flex-basis: 325px;
+}
+
+.trading__subtitle_yellow {
+  color: #f6cea8;
+}
+
+.trading-list_white {
+  color: #fff;
+}
+
+@media (max-width: 684px) {
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 529px) {
+
+  .trading__block {
+    display: flex;
+    flex-direction: column;
+    column-gap: unset;
+    row-gap: 24px;
+  }
+
+  .trading__box-first {
+    flex-basis: auto;
+  }
+
+  .trading__box-second {
+    flex-basis: auto;
+  }
+}

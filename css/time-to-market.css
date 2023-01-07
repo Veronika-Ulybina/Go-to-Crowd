@@ -1,0 +1,96 @@
+
+.time-to-market {
+  padding: 28px 0;
+}
+
+.time-to-market__title {
+  margin-bottom: 8px;
+}
+
+.time-to-market__desc {
+  color: #686868;
+  margin-bottom: 32px;
+}
+
+.time-to-market__body {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.time-to-market-block {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  padding: 16px 24px;
+}
+
+.time-to-market-block__title {
+  position: relative;
+  flex: 0 0 255px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  padding-right: 24px;
+}
+
+.time-to-market-block__title:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/section_time-to-market/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translate(40px, -50%);
+}
+
+.time-to-market-block__text {
+  flex-basis: 410px;
+  font-size: 14px;
+  line-height: 24px;
+  padding-left: 24px;
+}
+
+@media (max-width: 1100px) {
+
+  .time-to-market-block {
+    flex-direction: column;
+    align-items: unset;
+    row-gap: 8px;
+  }
+
+  .time-to-market-block__title {
+    flex-basis: 0;
+    padding-right: 0;
+  }
+
+  .time-to-market-block__text {
+    flex-basis: 0;
+    padding-left: 0;
+  }
+
+  .time-to-market-block__title:before {
+    display: none;
+  }
+}
+
+@media (max-width: 684px) {
+
+  .time-to-market-block__title {
+    width: 200px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .time-to-market-block__text {
+    width: 100%;
+  }
+}
